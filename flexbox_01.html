@@ -1,0 +1,250 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+
+<head> 
+	<title>Museo de Louvre</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+  <style> 
+  	#secc1{background-color:#000000;}
+  	#secc2{background-color:#000000;}
+  	#secc3{background-color:#000000;}
+  	#secc4{background-color:#000000;}
+  	#inicio{background-color:#000000;}
+  	#footer{color:#cc2322;}
+  </style>
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+<body style="background-color: #cc2322;">
+
+</body>
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/museol.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1"><font color="white">SOBRE LOUVRE</font></a>
+          <a href="#secc2"><font color="white">DETRÁS DEL CRISTAL</font></a>
+          <a href="#secc3"><font color="white">AUTORES, PONENTES Y LITERATURA</font></a>
+          <a href="#secc4"><font color="white">MULTIMEDIA</font></a>
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc" style="text-align: justify;">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1><font color="white">SOBRE LOUVRE</font></h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p><font color="white">Originalmente un palacio real, el Louvre se transformó en museo en 1793, tras la Revolución Francesa. Hoy alberga más de 35,000 obras de arte que abarcan desde civilizaciones antiguas hasta movimientos contemporáneos.</font></p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p><font color="white">Su arquitectura combina piedra y vidrio, tradición y modernidad. La Pirámide del arquitecto Ieoh Ming Pei, inaugurada en 1989, se ha convertido en el emblema de su apertura al mundo y al futuro.</font></p>
+		        <br>
+		        <p><font color="white">Visitar el Louvre es un viaje a través del tiempo: cada sala, cada escultura y cada pintura revelan las infinitas formas en que el ser humano ha buscado comprender su existencia.</font></p>
+
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    		<div class="imgs-secc-1">
+    			<!--contenedor con las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img7.jpg" title="Img 1a">
+	        		<img src="imagenes/img8.jpg" title="Img 1b">
+    			</div>
+    			<!--contenedor los dos textos de las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--texto para imagen a la izquierda-->
+	        		<p><font color="white">Museo de Louvre - fotografía noctura.</font></p>
+	        		<!--texto para imagen a la derecha-->
+	        		<p><font color="white">Museo de Louvre - fotografía diurna.</font></p>
+        		</div>
+        		<br>
+        		<h2><font color="white">Visualiza el museo en 360.</font></h2>
+        		<br>
+        		<div class="texto-secc"style="text-align: center;">
+        		<a href="visor.html"target="blank">
+        		<img  src="imagenes/nocturno.jpg" title="detras" width="80%" height="300">
+        	</a>
+        		<p><font color="white">Echa un vistazo al exterior del museo con nuestro recorrido virtual.</font></p>
+        		<!--contenedor con las dos imagenes en su version mobile-->
+        		<div class="par-imgs-mobile">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<!--texto para la imagen-->
+	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	        		<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+	        		<!--texto para la imagen-->
+	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc" style="text-align: justify;">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1><font color="white">DETRÁS DEL CRISTAL</font></h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p><font color="white">El museo de Louvre te invita a nuestro festival anual "Detrás del cristal" que se llevará a cabo durante las fechas del 16 al 18 de Diciembre del 2025. Este festival reúne a autores, pensadores y cineastas que investigan las tensiones entre libertad individual, manipulación, sistemas de poder y la evolución de la mente humana. A través de libros, conferencias, proyecciones y materiales audiovisuales, el festival invita al público a cuestionar, reflexionar y profundizar en el papel del pensamiento crítico en la sociedad contemporánea.</font></p>
+		         <br>
+		            <img  src="imagenes/rojoc.png" title="rojoc" width="100%" height="300">
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		    
+    		</div>
+
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc"style="text-align: justify;">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1><font color="white">AUTORES, PONENTES Y LITERATURA</font></h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p><font color="white">Los autores de esta edición representan distintas generaciones y enfoques, pero comparten un objetivo común: desvelar las fuerzas invisibles que moldean la historia y confrontar al espectador con preguntas que rara vez encuentran espacio en el discurso oficial.
+
+A su vez, nuestra selección literaria construye un puente entre la ficción, la investigación histórica y el testimonio directo. Estas obras, enriquecen la experiencia del festival y amplían el diálogo entre los asistentes.
+
+En conjunto conforman un espacio para pensar lo impensable, cuestionar lo incuestionable y reconocer lo que se encuentra detrás del cristal.</font></p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        
+		        <br><!--etiqueta para un brinco de renglón-->
+		     <h2><font color="white">AUTORES</font></h2>
+		     <br>
+		     <img  src="imagenes/Bannerantony.png" title="Bannerantony" width="100%" height="300">
+		     <p><font color="white">Antony Sutton; economista, historiador e investigador británico dedicado a exponer los vínculos entre las élites financieras y los procesos políticos más influyentes del siglo XX. </font></p>
+		      <br>
+		     <img  src="imagenes/Bannersg.png" title="Bannerg" width="100%" height="300">
+		     <p><font color="white">Guillermo Mas Arellano es un ensayista, analista cultural y divulgador español. Formado en teoría literaria y ensayo cinematográfico, su obra aborda las tensiones entre tradición y modernidad, así como el impacto espiritual y político del pensamiento contemporáneo.</font></p>
+		      <br>
+		     <img  src="imagenes/Bannersj.png" title="Bannerj" width="100%" height="300">
+		     <p><font color="white">Jorge Guerra es un investigador dedicado a desentrañar los hilos invisibles del poder. Su trabajo se centra en reconstruir la historia oculta detrás de los grandes acontecimientos globales.</font></p>
+		      <br>
+    	 <h2><font color="white">PONENTES</font></h2>
+		     <br>
+		     <img  src="imagenes/durov.png" title="durov" width="100%" height="500">
+		     <p><font color="white">En su charla magistral para nuestro festival Detrás del cristal, Dúrov plantea una reflexión urgente sobre el futuro de la red: ¿estamos al borde de un totalitarismo digital? </font></p>
+		      <br>
+    		<br>
+    		 <h2><font color="white">LITERATURA</font></h2>
+    	<br>
+    	<img  src="imagenes/1984.png" title="1984" width="100%" height="300">
+    	<br>
+	<p><font color="white">El protagonista, Winston Smith, lucha por conservar su propia humanidad en un sistema que ha convertido la vigilancia y la manipulación en herramientas fundamentales para el poder.</font> </p>
+		      <br>
+		     <img  src="imagenes/unmundofeliz.png" title="unmundofeliz" width="100%" height="300">
+		     <p><font color="white">Una sociedad aparentemente perfecta en la que no existe el dolor ni la tristeza, pero tampoco la libertad ni la verdadera individualidad.</font></p>
+		      <br>
+		     <img  src="imagenes/therofthemind.png" title="therofthemind" width="100%" height="300">
+		     <p><font color="white">Meerloo explora cómo la mente puede ser vulnerada bajo estrés, miedo y manipulación.</font></p>
+    		<br>
+		     <img  src="imagenes/confesiones.png" title="confesiones" width="100%" height="300">
+		     <p><font color="white">Detalla cómo se construyen dependencias financieras, cómo se influye políticamente y cómo se opera desde las sombras para consolidar intereses de élites internacionales.</font></p>
+    		
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc"style="text-align: justify;">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1><font color="white">MULTIMEDIA</font></h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p><font color="white">En este apartado encontrarás todo el contenido complementario que enriquece la experiencia de nuestro festival. Aquí se reúnen los materiales audiovisuales relacionados con los documentales proyectados, así como información extendida sobre los autores, sus investigaciones y las obras literarias que forman parte del programa.</font></p>
+		        <br><!--etiqueta para un brinco de renglón-->
+	
+
+     <br>
+		     <img  src="imagenes/landoftheblind.png" title="landooftheblind" width="100%" height="400">
+		     <p><font color="white">La película expone cómo el poder corrompe todas las ideologías por igual. Es un retrato crudo de la manipulación, el adoctrinamiento y la eterna lucha entre autoridad y pueblo. </font></p>
+		      <br>
+		     <img  src="imagenes/zeitgeist.png" title="zeitgeist" width="100%" height="400">
+		     <p><font color="white">Es un documental polémico que analiza las estructuras invisibles que sostienen el poder moderno.</font></p>
+		      <br>
+		     <img  src="imagenes/themoney.png" title="themoney" width="100%" height="400">
+		     <p><font color="white">Documental que rastrea la historia del poder financiero, desde los antiguos prestamistas hasta la creación de los bancos centrales modernos.</font></p>
+
+</div>
+   
+<div class="texto-secc"style="text-align: center;">
+	<h2><font color="white">Accede al contenido completo.</font></h2>
+	 <p><font color="white">Escanea el código para acceder a todo el contenido multimedia del festival.</font></p> 
+	</div>
+	<br>
+	<div class="texto-secc"style="text-align: center;">
+ <img  src="imagenes/qr.png" title="qr"width="300px" height="300px" style="display: block; margin-left: auto; margin-right: auto;">
+	    	<div class="texto-secc"style="text-align: center;">
+	    		</div>
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenes/twt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="http://instagram.com/">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">todos los derechos a sus respectivos autores</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
